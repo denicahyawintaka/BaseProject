@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/mainfragment">
+
+    <fragment
+        android:id="@+id/mainfragment"
+        android:name="com.example.baseproject.presentation.main.Mainfragment"
+        android:label="Home"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_mainfragment_to_destination"
+            app:destination="@id/destination" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/destination"
+        android:name="com.example.baseproject.presentation.destination.Destination"
+        android:label="Destination"
+        tools:layout="@layout/destination_fragment" >
+        <argument
+            android:name="namalengkap"
+            app:argType="string"/>
+        <argument
+            android:name="noktp"
+            app:argType="string"/>
+
+        <argument
+            android:name="provinsi"
+            app:argType="string"/>
+    </fragment>
+</navigation>

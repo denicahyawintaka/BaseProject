@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">BaseProject</string>
+    <string name="data_diri">Data Diri</string>
+    <string name="nomor_ktp">Nomor KTP</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+</resources>
